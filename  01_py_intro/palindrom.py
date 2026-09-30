@@ -46,10 +46,35 @@ def is_palindrom_sentence(s:str) -> bool:
     return string_stripped == string_stripped[::-1]
 
 def palindrom_product(x:int) -> int:
+    highest = 0
     for i in range(x):
-        if str(i) == str(i)[::-1] and 10000 <= i <= 998001:
-            return i
-    return 0
+        if str(i) == str(i)[::-1] and 10000 <= i <= 998001 and i > highest:
+            highest = i
+    return highest
+
+def get_dec_hex_palindrom(x:int) -> str:
+    highest = 0
+    for i in range(x):
+        if str(i) == str(i)[::-1] and to_base(i,16) == to_base(i,16)[::-1]:
+            highest = i
+    return str(highest)
+
+def to_base(number: int, base: int) -> str:
+        """
+        :param number: Zahl im 10er-Syste,
+        :param base: Zielsystem (maximal 36)
+        :return: Zahl im Zielsystem als String
+        >>> to_base(1234,16)
+        '4D2'
+        """
+        zeihen = "0123456789ABCDEF"
+        ergebnis = ""
+        while number > 0:
+            rest = number % base
+            ergebnis += zeihen[rest]
+            number = number // base
+        return ergebnis[::-1]
+
 
 if __name__ == "__main__":
      print(is_palindrom("hannah"))
