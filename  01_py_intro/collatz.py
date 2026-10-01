@@ -1,7 +1,7 @@
 __author__ = "Marius Jörg"
 __example__ = "SEW/01/F2"  # Gegenstand/Übungsblatt/Aufgabe(Kapitel)
 __date__ = "1.10.2026"
-__version__ = "1.2.0"
+__version__ = "1.2.0 "
 __license__ = "GNU GPLv3"
 __status__ = "Released"
 

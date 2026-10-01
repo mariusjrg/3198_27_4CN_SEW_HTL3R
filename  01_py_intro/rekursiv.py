@@ -23,4 +23,4 @@ if __name__ == "__main__":
     t1 = time()
     print("m_list:", m_list)
     print("m_dict:", m_dict)
-    print("Berechnungszeit:", t1 - t0, "Sekunden")
+    print("Berechnungszeit:", t1 - t0, "Sekunden ")
