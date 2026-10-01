@@ -80,5 +80,5 @@ if __name__ == "__main__":
      print(is_palindrom("hannah"))
      print(is_palindrom_sentence("Was it a car or a cat I saw?"))
      print(palindrom_product(11000))
-     print("Schluss der Datei")
+     print("Schluss der Datei :)")
 
